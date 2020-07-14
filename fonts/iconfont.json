@@ -1,0 +1,51 @@
+{
+  "id": "1941592",
+  "name": "私单1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "609279",
+      "name": "搜索",
+      "font_class": "sousuosearch82",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    },
+    {
+      "icon_id": "995260",
+      "name": "email",
+      "font_class": "youxiang",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "7335473",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "eb21",
+      "unicode_decimal": 60193
+    },
+    {
+      "icon_id": "421699",
+      "name": " Twitter",
+      "font_class": "weibiaoti501",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "421700",
+      "name": "facebook",
+      "font_class": "weibiaoti502",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "806165",
+      "name": "youtube",
+      "font_class": "2",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    }
+  ]
+}

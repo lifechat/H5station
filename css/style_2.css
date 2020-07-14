@@ -277,3 +277,59 @@ body.stm_header_offset .stm_titlebox {
         padding: 100px 0;
     }
 }
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-heading {
+    font-size: 18px;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-heading .vc_tta-panel-title {
+    letter-spacing: 0 !important;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-heading .vc_tta-panel-title > a {
+    padding: 23px 60px 23px 26px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 400;
+    background-color: #f6f7f8;
+    border-color: #f6f7f8;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-heading .vc_tta-panel-title > a .vc_tta-title-text {
+    opacity: 1;
+    color: #293742;
+    font-weight: 400;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel-heading .vc_tta-controls-icon {
+    right: 25px;
+    opacity: 1;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-panel-heading:hover .vc_tta-controls-icon {
+    color: #fff !important;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel.vc_active .vc_tta-controls-icon.vc_tta-controls-icon-triangle::before {
+    transform: rotate(180deg) translateY(50%);
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel:last-child .vc_tta-panel-heading .vc_tta-panel-title > a {
+    border-bottom-color: #f6f7f8;
+}
+
+.stm_accordions_style_2 .vc_tta-container .vc_tta-accordion .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-body {
+    padding-left: 23px;
+}
+
+@media (max-width: 1024px) {
+    .stm_accordions_style_2.stm_tabs_style_4 .vc_tta.vc_tta-tabs .vc_tta-tabs-list .vc_tta-tab {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .stm_accordions_style_2 .vc_tta.vc_tta-tabs .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-body {
+        padding-top: 30px;
+    }
+}

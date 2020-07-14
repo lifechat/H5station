@@ -1,0 +1,113 @@
+﻿@font-face {
+  font-family: 'stmicons';
+  src:  url('../fonts/stmicons.eot');
+  src:  url('../fonts/stmicons.eot') format('embedded-opentype'),
+    url('../fonts/stmicons.ttf') format('truetype'),
+    url('../fonts/stmicons.woff') format('woff'),
+    url('../fonts/stmicons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="stmicon-"], [class*=" stmicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'stmicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stmicon-bon-envelope:before {
+  content: "\e67a";
+}
+.stmicon-company-clock:before {
+  content: "\d9300";
+}
+.stmicon-company-arrow-right:before {
+  content: "\d9301";
+}
+.stmicon-company-binoculars:before {
+  content: "\d9302";
+}
+.stmicon-company-chat:before {
+  content: "\d9303";
+}
+.stmicon-company-clock2:before {
+  content: "\d9304";
+}
+.stmicon-company-discuss:before {
+  content: "\d9305";
+}
+.stmicon-company-download:before {
+  content: "\d9306";
+}
+.stmicon-company-envelope:before {
+  content: "\d9307";
+}
+.stmicon-company-envelope2:before {
+  content: "\d9308";
+}
+.stmicon-company-file:before {
+  content: "\d9309";
+}
+.stmicon-company-graph:before {
+  content: "\d930a";
+}
+.stmicon-company-phone:before {
+  content: "\d930b";
+}
+.stmicon-company-phone2:before {
+  content: "\d930c";
+}
+.stmicon-company-pie-chart:before {
+  content: "\d930d";
+}
+.stmicon-company-pin:before {
+  content: "\d930e";
+}
+.stmicon-company-plane:before {
+  content: "\d930f";
+}
+.stmicon-company-quote:before {
+  content: "\d9310";
+}
+.stmicon-company-schedule:before {
+  content: "\d9311";
+}
+.stmicon-company-settings:before {
+  content: "\d9312";
+}
+.stmicon-company-smartphone:before {
+  content: "\d9313";
+}
+.stmicon-company-strategy:before {
+  content: "\d9314";
+}
+.stmicon-company-target:before {
+  content: "\d9315";
+}
+.stmicon-company-tools:before {
+  content: "\d9316";
+}
+.stmicon-company-upload:before {
+  content: "\d9317";
+}
+.stmicon-company-megaphone:before {
+  content: "\d9318";
+}
+.stmicon-company-planet-earth:before {
+  content: "\d9319";
+}
+.stmicon-company-atomic:before {
+  content: "\d931a";
+}
+.stmicon-company-monitor:before {
+  content: "\d931b";
+}

@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../css/style_2.css" type="text/css"/>
     <link rel="stylesheet" href="../fonts/stmicons.css" type="text/css" />
     <link rel="stylesheet" href="../css/style_19.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/skin.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="../fonts/js_composer.min.css"/>
+    <link rel="stylesheet" href="../fonts/js_composer_tta.min.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
     <style type="text/css">
     .stm_titlebox {
 				background-image: url(../image/shutterstock_676407535.jpg);
@@ -54,13 +58,13 @@
                              <!--内容  -->
                             <div class="stm-header__element object424 stm-header__element_">
                                 <div class="stm-icontext">
-                                    <i class="stm-icontext__icon mtc stmicon-bon-envelope fsz_14">
+                                    <i class="stm-icontext__icon mtc emali-img" >
                                     </i>
-                                    <sapn class="stm-icontext__text fsz_16">
-                                            info@apptutti.com            
-                                    </sapn>
+                                    <span class="stm-icontext__text fsz_16">
+                                        info@apptutti.com           
+                                    </span>
                                 </div>
-                             </div>
+                            </div>
                              <!-- 图标 -->
                              <div class="stm-header__element object466 stm-header__element_square">
                                     <div class="stm-socials">
@@ -80,18 +84,38 @@
                              </div>
                              <!-- 登录注册 -->
                              <div class="stm-header__element object628 stm-header__element_default">
-                                <div class="div">
-                                    <a href="#" class="">登录</a>
-                                    |
-                                    <a href="#" class="">注册</a>
+                                <div class="stm-navigation heading_font fsz_16 stm-navigation__default stm-navigation__default stm-navigation__none stm-navigation__fwn stm-navigation__divider">
+                                    <ul >
+                                        <li id="menu-item-8800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8800">
+                                            <a href="#">
+                                                Register<span class="divider">|</span>
+                                            </a>
+                                        </li>
+                                        <li id="menu-item-8801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8801">
+                                            <a href="#">
+                                                Sign in
+                                                <span class="divider">|</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                              </div>
                              <!-- 搜索框 -->
                              <div class="stm-header__element object494 stm-header__element_">
                                     <div class="stm-search stm-search_style_1">
-                                        <a href="" class="mbdc wtc_h mbc_h hidden-sm hidden-xs">
+                                        <a href="" class="mbdc wtc_h mbc_h hidden-sm hidden-xs" style="height: 36px !important;display: block;">
                                             <i class="stm-search__icon stm-search__icon_rounded icon_14px  fa fa-search"></i>
                                         </a>
+                                    </div>
+                                    <div class="hidden-lg hidden-md stm_widget_search">
+                                        <div class="widget widget_search">
+                                            <form class="search-form" method="GET">
+                                                <input placeholder="Search..." class="form-control" />
+                                                <button type="submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
                              </div>
                          </div>
@@ -111,37 +135,43 @@
                        <div class="stm-header__cell stm-header__cell_right">
                            <div class="stm-header__element object1285 stm-header__element_default">
                                <div class="stm-navigation heading_font stm-navigation__default stm-navigation__default stm-navigation__line_bottom stm-navigation__fwn">
-                                   <ul>
+                                    <ul>
                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8791">
-                                           <a href="#">Home</a>
+                                           <a href="../view/site_index.html">Home</a>
                                        </li>
                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8780">
-                                        <a href="">About</a>
+                                        <a href="../view/site_aboutUs.html">About</a>
                                         </li>
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11510">
-                                        <a href="">Stores</a>
+                                        <a href="../view/site_stores.html">Stores</a>
                                         </li>
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11510">
-                                            <a href="">Services</a>
+                                            <a href="../view/site_service.html">Services</a>
                                             <ul>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11157 stm_col_width_default stm_mega_cols_inside_default"><a href="">Standard Package (RSPP)</a></li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11513 stm_col_width_default stm_mega_cols_inside_default"><a href="">Premium Package (DDCP)</a></li>
-                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8793 stm_col_width_default stm_mega_cols_inside_default"><a href="">Partner Financing Program</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11157 stm_col_width_default stm_mega_cols_inside_default">
+                                                    <a href="../view/site_service_RSPP.html">Standard Package (RSPP)</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11513 stm_col_width_default stm_mega_cols_inside_default">
+                                                    <a href="../view/site_service_DDCP.html">Premium Package (DDCP)</a>
+                                                </li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8793 stm_col_width_default stm_mega_cols_inside_default">
+                                                    <a href="../view/site_service_pfp.html">Partner Financing Program</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12324">
-                                        <a href="">News</a>
+                                            <a href="../view/site_news.html">News</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4281 current_page_item menu-item-8782">
-                                        <a href="">FAQs</a>
+                                            <a href="../view/site_FAQs.html">FAQs</a>
                                         </li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8781">
-                                        <a href="">Contact us</a>
+                                            <a href="../view/site_aboutUs.html">Contact us</a>
                                         </li>
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11069">
-                                        <a href="">Try it for Free!</a>
+                                            <a href="#">Try it for Free!</a>
                                         </li>
-                                   </ul>
+                                    </ul>
                                </div>
                            </div>
                        </div>
@@ -155,7 +185,7 @@
                 <!-- 导航栏目 -->
                 <div class="stm_flex stm_flex_center stm_flex_last stm_flex_nowrap">
                     <div class="stm_mobile__logo">
-                        <a href="#" >
+                        <a href="../view/site_index.html" class="mbdc wtc_h mbc_h hidden-sm hidden-xs">
                             <img src="../image/white-logo.png" alt="Site Logo">
                         </a>
                     </div>
@@ -191,20 +221,780 @@
                      <div class="stm_markup__content">
                          <!-- 锚点 -->
                          <div class="container vc_container">
-                             
+                            <div class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#Getting-Started" style="color: #e30000;">
+                                                                Getting Started
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#Intellectual-Property" style="color: #e30000;">
+                                                                Intellectual Property
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#About-Submission" style="color: #e30000;">
+                                                                About Submission
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#About-Publishing" style="color: #e30000;">
+                                                                About Publishing
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#About Ad Banners" style="color: #e30000;">
+                                                                About Ad Banners
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#About Launching in China" style="color: #e30000;">
+                                                                About Launching in China
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#About-Support" style="color: #e30000;">
+                                                                About Support
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    <h4 style="text-align: center;">
+                                                        <span style="color: #e30000;">
+                                                            <a href="#Others" style="color: #e30000;">
+                                                                Others
+                                                            </a>
+                                                        </span>
+                                                    </h4>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                          </div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                         <div></div>
-                     </div>
-                 </div>
+                         <!-- 锚点对应的内容信息 -->
+                         <!-- getting-started -->
+                        <div class="container vc_container  vc_custom_1531796082993 " >
+                            <div id="Getting-Started" class="vc_row wpb_row vc_row-fluid vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="stm_spacer ">
+                                                <div class="visible-lg visible-md" style="height: 0px;"></div>
+                                                <div class="visible-sm_landscape" style="height: 0px;"></div>
+                                                <div class="visible-sm" style="height: 0px;"></div>
+                                                <div class="visible-xs" style="height: 0px;"></div>
+                                            </div>
+                        <h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">Getting Started</h4>
+                        <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div>
+                        
+                        <div class="vc_tta-container" data-vc-action="collapse">
+                            <div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group vc_custom_1529399600081"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529395972420-9b76d811-abc1" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529395972420-9b76d811-abc1" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why should I expand into China?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>With over 1 billion mobile users, China is home to the largest app market in the world. It accounts for a third of the world’s app market and is a top destination for Android and iOS apps and games.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="vc_tta-panel" id="1529395972525-851ab7fc-84f7" data-vc-content=".vc_tta-panel-body">
+                            <div class="vc_tta-panel-heading">
+                                <h4 class="vc_tta-panel-title">
+                                    <a href="#1529395972525-851ab7fc-84f7" data-vc-accordion data-vc-container=".vc_tta-container">
+                                        <span class="vc_tta-title-text">Why APPTUTTi</span>
+                                        <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
+                                    </a>
+                                </h4>
+                        </div>
+                        <div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Our Partner Resources Portal is the first and only online platform to provide you with all the necessary resources to increase compatibility of your app in China. Developers simply need to register and submit their app, after which they will be able to enjoy the range of resources on the portal for free such as SDK resources, translation services, online support for integration and IP registration.</p>
+                        <p>With our headquarters in Hong Kong and a branch in Shenzhen, our team of experts will ensure the successful publication of your app or game in China and emerging markets. To learn more about our services, <a href="https://www.apptutti.com/corporate/about-us/">Click Here.</a></p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396114293-ec996077-1399" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396114293-ec996077-1399" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Where do I start?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>If you are an App Owner or Developer, please go to our Partner Resources Portal to register an account: <a href="https://www.apptutti.com/partners">www.apptutti.com/partners</a>. After your registration has been verified, you will be able to submit your apps and games. For more information, please check out our video tutorials on YouTube <a href="https://www.youtube.com/channel/UCRCuckM37Qg-aLXgTFwI3Cg/videos">here</a>.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396115755-eefcef10-d3d0" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396115755-eefcef10-d3d0" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What are RSPP, RSPP+ and DDCP?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p><strong>Standard (RSPP)</strong><br />
+                        RSPP (Register/Submit/Plug/Publish) is the choice for those who want to unlock China and emerging markets. You must provide an Android version of your app or game.</p>
+                        <p><strong>Professional (RSPP+)<br />
+                        </strong>RSPP Plus (Register/Submit/Plug/Publish Plus) is the choice for those who want wider coverage in China and emerging markets, and require professional expertise to optimize their app or game for those markets.</p>
+                        <p><strong>Premium (DDCP)</strong><br />
+                        DDCP (Deep Dive Customization Program) is the ultimate partnership between developers and APPTUTTi. This is the choice for those who want services tailored to their needs. This program will only be applicable to selected app or game projects. Invitation will be sent to those Partners for their eligible projects.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- Intellectual Property -->
+                        <div class="container vc_container   " >
+                            <div id="Intellectual-Property" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 60px;"></div>
+                            <div class="visible-sm_landscape" style="height: 60px;"></div>
+                            <div class="visible-sm" style="height: 60px;"></div>
+                            <div class="visible-xs" style="height: 60px;"></div>
+                        </div><h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">Intellectual Property</h4><div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div>
+                        <div class="vc_tta-container" data-vc-action="collapse">
+                            <div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529396185016-3c886072-72be" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396185016-3c886072-72be" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Is my IP protected?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We understand the importance of securing intellectual property (IP) protection for your creations. Intellectual property (IP) protection is a subject of concern for app and game developers seeking to enter China. In March 2016, the Chinese government introduced a new policy on the digital IP registration process. This registration is mandatory for new entrants into China, assuring you that China is committed to the protection and upholding of your IP rights.</p>
+                        <p>We offer a one-stop approach to IP registration and protection. Our services include the preparation of documents, registration and application with the IP protection authorities in China, and the monitoring of your application until the approval and release of your IP certificate.</p>
+                        <p>IMPORTANT: IP Protection Registration is subject to approval by the Authorities. We will provide feedback on approval status and we will not be liable, should there be any rejection and/or opposition from the Authorities.</p>
+                        <p>APPTUTTi is based out of Hong Kong and all contractual agreements are bind(ed) under Hong Kong Law. App developers do not have to share the source codes of their apps with APPTUTTi or any other entities.  SDK(s), API(s) and Plug-in(s) will be provided for registered partners to do integration on their own.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396185052-24867baa-3720" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396185052-24867baa-3720" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the procedure?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Please follow the steps below for IP registration:</p>
+                        <ol>
+                        <li>Complete the app submission/Submit your app. Your app MUST be fully translated into Simplified Chinese including the app title, description and content.</li>
+                        <li>Send us the partial source code of your app. The first 1500 and the last 1500 lines of the source codes from the specific app in Word format for IP rights verification.</li>
+                        <li>Send us a special unblocked version of the translated app (the test app file). This should be free of any non-app related content i.e. no banner and/or video advertising, no developer and/or copyright information (including name(s) or website(s), copyright notice, staff acknowledgement) on landing or ending pages, nor any screen interfaces inside the app. In cases where the app requires a user login, a super user account with passcode MUST be provided. In cases where there are in-App purchase billing points, all the billing points MUST be unconditionally unlocked. Remark: The test App file and related information provided are solely for IP registration and application purposes and will be sent to the State Administration of Press, Publication, Radio, Film and Television of the People’s Republic of China (SAPPRFT) for examination. For commercial publication, please follow the regular app submission procedure on your Dashboard.</li>
+                        </ol>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398633768-542c207a-6a72" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398633768-542c207a-6a72" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why is my name/company name not printed on the IP certificate?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>In China, only the local Chinese entity is able to register for IP rights. We use our local Chinese entity to register on behalf of our partners.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398662027-fa4ebaae-5de6" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398662027-fa4ebaae-5de6" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Can an app have different IP certificates?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Only one registration is required for an app to cover all mobile operating systems.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                        </div>
+
+                        </div>
+                        </div>
+                        <!-- About Submission Process -->
+                        <div class="container vc_container   " >
+                            <div id="About-Submission" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 60px;"></div>
+                            <div class="visible-sm_landscape" style="height: 60px;"></div>
+                            <div class="visible-sm" style="height: 60px;"></div>
+                            <div class="visible-xs" style="height: 60px;"></div>
+                        </div><h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">About Submission Process</h4><div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529396273799-a07a5f7c-d0dd" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396273799-a07a5f7c-d0dd" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">I want to submit my App/Game to APPTUTTi for consideration, what should I do next?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Go to our website (<a href="https://www.apptutti.com/">www.apptutti.com</a>) and register to become our partner. After approval, you will gain access to the Partner Resources Portal. We will provide guidance through the app submission process. You can also access our Quick Tips pages for more details:</p>
+                        <ul>
+                        <li>For Quick Tips Before App Submission, please click <a href="https://www.apptutti.com/partners/qt_appsubmission.php">here</a>.</li>
+                        <li>For Quick Tips for Resources Download, please click <a href="https://www.apptutti.com/partners/qt_resourcesdownload.php">here</a>.</li>
+                        </ul>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396273926-ae11083b-9d45" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396273926-ae11083b-9d45" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What kind of support services can I get from APPTUTTi?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Depending on the package you select, the RSPP, RSPP+ and DDCP, we offer a range of services to increase compatibility and exposure of your app in China and emerging markets.  Our services include:</p>
+                        <ul>
+                        <li>Technical integration services for different Plug-In(s)/SDK(s)</li>
+                        <li>Translation services from English into Simplified Chinese</li>
+                        <li>IP Registration services</li>
+                        <li>Business consulting services</li>
+                        <li>Tailor made/Custom app development service</li>
+                        <li>Local marketing and promotion services</li>
+                        </ul>
+                        <p>All the customization services are subject to specification requirements. The service fee varies according to the project and depends on the scope of services required. Please contact your dedicated partner consultant for more details.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396600209-16bd9351-ebe7" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396600209-16bd9351-ebe7" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What do I need before submitting my App/Game?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p><strong><u>APPTUTTi App Submission Checklist<br />
+                        </u></strong></p>
+                        <p><strong>App Submission Information and Materials Required</strong></p>
+                        <p><strong>App Information:</strong></p>
+                        <ul>
+                        <li>App Titles,</li>
+                        <li>App Details; Short &amp; Long Descriptions</li>
+                        <li>Prepare App Icon; (Size: 1024 * 1024 px, Format: jpg/png/tiff)</li>
+                        <li>App Type and Category</li>
+                        <li>Game Website/ Link</li>
+                        <li>Support Contact Information</li>
+                        </ul>
+                        <h5><strong>App Specifications</strong></h5>
+                        <ul>
+                        <li>App Programming Language/ Engine Framework</li>
+                        <li>App Version Number</li>
+                        <li>OS Platform: Android/ iOS</li>
+                        <li>Monetization model</li>
+                        <li>User Login Requirements</li>
+                        <li>Server Location</li>
+                        <li>Prepare the APK file in working condition (Refer to Quick Submission Tips)</li>
+                        <li>App Interface Preview (2 Screenshots in jpg/png/tiff format, less than 2MB each)</li>
+                        <li>Promotional Pictures/ Banners<br />
+                        (First image size is 2080*828px and the Second image size is 1024*500px; Format: JPG / PNG / TIFF)</li>
+                        <li>Graphic Elements –Promotional Materials for Stores Publishing(Format: Vector / PNG / SVG; ZIP File less than 50MB9</li>
+                        <li>Promotional Video Link (if any)</li>
+                        <li>Network Connectivity Info</li>
+                        <li>App Server IP Address</li>
+                        <li>Authorization Letter [See sample – For Publishing needs at Stores]</li>
+                        </ul>
+                        <h5><strong>Current Billing Points Info (In-App Purchase)</strong></h5>
+                        <ul>
+                        <li>List out EACH billing point/ IAP</li>
+                        <li>Prepare User Screen Interface (2-4 Screenshots in jpg/png/tiff format, less than 2MB each)</li>
+                        </ul>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396631808-9fb11f3d-c93c" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396631808-9fb11f3d-c93c" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">App Submission, Part I: On how to submit your app for content review</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_video_widget wpb_content_element vc_clearfix   vc_video-aspect-ratio-169 vc_video-el-width-100 vc_video-align-left" >
+                                <div class="wpb_wrapper">
+                                    
+                                    <div class="wpb_video_wrapper"><iframe title="TUTTi Tutorial: App Submission – Part I, Submit Your App(s) in 30 minutes" width="1170" height="658" src="https://www.youtube.com/embed/zyfniEA7rr0?start=4&feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396633473-2208a46b-0402" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396633473-2208a46b-0402" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">App Submission, Part II: On how to submit your app with Simplified Chinese content</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_video_widget wpb_content_element vc_clearfix   vc_video-aspect-ratio-169 vc_video-el-width-100 vc_video-align-left" >
+                                <div class="wpb_wrapper">
+                                    
+                                    <div class="wpb_video_wrapper"><iframe title="TUTTi Tutorial: App Submission – Part II, Submit Your App(s) in 30 minutes" width="1170" height="658" src="https://www.youtube.com/embed/WQucwVxkf0o?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <!--About Publishing and Monetization -->
+                        <div class="container vc_container   " >
+                            <div id="About-Publishing" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 60px;"></div>
+                            <div class="visible-sm_landscape" style="height: 60px;"></div>
+                            <div class="visible-sm" style="height: 60px;"></div>
+                            <div class="visible-xs" style="height: 60px;"></div>
+                        </div><h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">About Publishing and Monetization</h4><div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529396595762-1aef5bf3-f096" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396595762-1aef5bf3-f096" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why do I need APPTUTTi?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>While it is possible to submit your app to local stores in China by yourself, you will likely encounter numerous challenges and barriers. One of the main challenges involved is setting up a local entity in China to partner with the local App Stores. For foreign companies, this process requires extensive knowledge on Chinese law, and takes anywhere between 3 to 6 months to complete. APPTUTTi can help you overcome these practical and time barriers.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529396595810-a79f1170-fe06" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529396595810-a79f1170-fe06" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How much do APPTUTTi services cost?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>You can join our RSPP and DDCP programs for free and we will share a percentage of the revenue generated from your apps.</p>
+                        <p>Our Standard (RSPP <strong><span style="color: #ff6600;">PLUS</span></strong>) program is available for USD $299 / $599.<br />
+                        Our Standard (RSPP <strong><span style="color: #ff0000;">MAX</span></strong>) program is available for USD $3,999.</p>
+                        <p><strong>Services include:</strong></p>
+                        <ul>
+                        <li>Professional Translation for over 1,000 words</li>
+                        <li>SDK resources for multi stores/multiple app stores</li>
+                        <li>Different/A range of monetization options</li>
+                        <li>Access to all top stores in China and emerging markets</li>
+                        <li>Priority technical support</li>
+                        <li>IP registration and protection</li>
+                        </ul>
+                        <p>For details on the revenue split, please contact our partner support consultants.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397011598-dd0748e1-313a" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397011598-dd0748e1-313a" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Does APPTUTTi provide customization services for App(s)?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Yes. All our customization services are subject to specification requirements. The service fee varies between projects and will on the services required. Please contact your dedicated partner consultant for more details.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397015091-f1fbf6f9-9c4d" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397015091-f1fbf6f9-9c4d" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the payment method?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Your revenue share will be remitted to your PayPal or bank account which you have assigned on the partner resources portal. For more details, please check out our video tutorial <a href="https://www.youtube.com/watch?v=WTJ-2b_Tu0o&amp;t=9s">here</a><strong>. </strong></p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397015822-01b66936-8189" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397015822-01b66936-8189" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the revenue model for publishing my App(s) with APPTUTTi</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We operate a 50/50 split with our registered partners on the net revenue earned from in-app purchases. This is taken after deducting all admin charges and taxes of the local App Stores.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397095429-9e13cf28-d221" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397095429-9e13cf28-d221" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the revenue model for publishing my App(s) with Ads feature?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We operate a 50/50 split with our registered partners on the net revenue earned after deducting all admin charges and taxes of the local App Stores.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397128568-1581cb05-0503" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397128568-1581cb05-0503" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What are the revenue earning models accepted?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>There are multiple ways to earn revenue, such as:</p>
+                        <p>– Free to play apps where you earn revenue through subscription from the store(s) your app/game is launched in<br />
+                        – Video and banner Ads<br />
+                        – In-App Purchases<br />
+                        – Pay to Download</p>
+                        <p>Please note that in order to have more than one earning option, you will have to create a new project. Please contact your dedicated partner consultant for more details.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397157032-7927dd13-06a0" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397157032-7927dd13-06a0" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">My App(s) is free, how can I publish it in China?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We provide the solution! Our SuperSDK integrates your App/Game with local ads and app stores.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397157818-4b4ece1a-3917" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397157818-4b4ece1a-3917" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Do you accept banks outside China?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Yes. We send payments to our partners’ local bank or their PayPal accounts. The lead time of the whole remittance process will depend on your bank’s procedure. It normally takes 2 to 7 business days for settlements through bank accounts, and 24 to 48 hours for settlements through PayPal.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398706859-16ef0908-b458" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398706859-16ef0908-b458" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Restriction on billing points?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>There are no restrictions on the number of billing points and their price limit. Partners are free to determine the unit price of each billing point of their in-app purchase. We advise our partners to consider market expectations when determining the price.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                            </div>
+                             </div>
+                        </div>
+                        <!-- About Ad Banners -->
+                        <div class="container vc_container   " >
+                            <div id="About Ad Banners" class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 60px;"></div>
+                            <div class="visible-sm_landscape" style="height: 60px;"></div>
+                            <div class="visible-sm" style="height: 60px;"></div>
+                            <div class="visible-xs" style="height: 60px;"></div>
+                        </div><h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">About Ad Banners</h4><div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529397220593-dfbec1d4-01c9" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397220593-dfbec1d4-01c9" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why do I need to remove Overseas Ad Banners?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Overseas Ads Banners are not allowed in China as they are not compatible with the local market. Our SuperSDK helps integrate you app with local banners and interstitial ads features of the different app stores in China.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397220676-e2333d5e-c2b6" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397220676-e2333d5e-c2b6" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How much profit do I make from banner ads with your local app stores?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Partners and APPTUTTi will receive equal shares from net revenue.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397220907-a5fe6602-f587" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397220907-a5fe6602-f587" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How is my ads revenue calculated?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Revenue from banner and interstitial ads are calculated using CPM (Cost Per Impression) and CPC (Cost Per Click).</p>
+                        <p>There is no unique rate for both CPM and CPC. The rate will vary depending on the advertiser’s bid and the app’s popularity. The more popular the App/Game is, the higher the CPM and CPC rates will be.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397221021-c1b07be4-b068" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397221021-c1b07be4-b068" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Can I have video sharing link in my App(s)?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <div id="1525838203778-61fec583-6479" class="vc_tta-panel vc_active" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-body">
+                        <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">No. This feature is not supported at the moment.</div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="1525838204948-fd67a6b6-5d0d" class="vc_tta-panel" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-heading">
+                        <h4 class="vc_tta-panel-title"></h4>
+                        </div>
+                        </div>
+                        
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        <!-- About Launching in China -->
+                        <div class="container vc_container   " >
+                            <div id="About Launching in China" class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 60px;"></div>
+                            <div class="visible-sm_landscape" style="height: 60px;"></div>
+                            <div class="visible-sm" style="height: 60px;"></div>
+                            <div class="visible-xs" style="height: 60px;"></div>
+                        </div><h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">About Launching in China</h4><div class="stm_spacer ">
+                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                            <div class="visible-sm" style="height: 20px;"></div>
+                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529397809186-4a953e55-840c" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397809186-4a953e55-840c" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Do I need to have a local server support in China?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>This will be necessary for apps that require user login or high accessing rates to your server in order to ensure better user experience. We provide local server hosting services for DDCP partners.  For details, please contact your dedicated partner consultant.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397809292-dcc35473-f2ae" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397809292-dcc35473-f2ae" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why do I need to change ALL the English text of my App into Simplified Chinese?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>This is required by the local app stores in China. It also improves user experience.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397809374-82e1268a-9e1e" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397809374-82e1268a-9e1e" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How do I translate my App into Simplified Chinese?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Translation is required for the app title, icon title, homepage, and contents.</p>
+                        <p>We provide a FREE translation service from English to Simplified Chinese for up to 1,000 words within 3 days upon receiving your language pack.</p>
+                        <p>After completing your app submission, registered partners will be able to enjoy this service through the portal.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529397809461-010cb9a2-bf28" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529397809461-010cb9a2-bf28" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What do I do after receiving your Translated Language Pack?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <div id="1525838203778-61fec583-6479" class="vc_tta-panel vc_active" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-body">
+                        <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                        <p>Update your source code with the new Chinese translations, then upload the new app file to the portal. Translation is required for your app title, icon title, homepage, and contents.</p>
+                        <p>.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="1525838204948-fd67a6b6-5d0d" class="vc_tta-panel" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-heading">
+                        <h4 class="vc_tta-panel-title"></h4>
+                        </div>
+                        </div>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398059960-fd902426-2eb3" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398059960-fd902426-2eb3" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Can I also launch my App/Game in China in English?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Yes. You will get both Chinese and English versions of our SuperSDK. There many English speaking mobile users in China and it is highly recommended that you launch your app or game in English as well to target this audience.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398115269-1b228e1c-5feb" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398115269-1b228e1c-5feb" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What type of App/Game are well received in China?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Apps &amp; Games with a high demand in China are:</p>
+                        <ul>
+                        <li>Casual games of intelligence improvement</li>
+                        <li>Casual games of elimination</li>
+                        <li>Shooting</li>
+                        <li>Parkour (running, jumping, climbing, crawling etc.)</li>
+                        <li>Racing</li>
+                        <li>Adventure</li>
+                        <li>Tower Defense</li>
+                        </ul>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398143843-d77f02fd-2ac4" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398143843-d77f02fd-2ac4" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">We already have our Language Pack translated into Simplified Chinese, why is it necessary to send our original Language Pack for review?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We will need to review your language pack to ensure that the content has been correctly translated and meets the expectations of local users. This process is also required for IP registration.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398170616-1b2ce8dd-06b5" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398170616-1b2ce8dd-06b5" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Why do you promote Android App(s) only?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>The Android market makes up of over 80% of the mobile user market in China. As such, the Android market provides the main source of revenue for our partners.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div></div></div></div></div>		</div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <!-- About Support -->
+                        <div class="container vc_container   " >
+                            <div id="About-Support" class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="stm_spacer ">
+                                                <div class="visible-lg visible-md" style="height: 60px;"></div>
+                                                <div class="visible-sm_landscape" style="height: 60px;"></div>
+                                                <div class="visible-sm" style="height: 60px;"></div>
+                                                <div class="visible-xs" style="height: 60px;"></div>
+                                            </div>
+                                            <h4 style="color: #dd0000;text-align: left" class="vc_custom_heading #about-support   text-left">About Support</h4><div class="stm_spacer ">
+                                            <div class="visible-lg visible-md" style="height: 20px;"></div>
+                                            <div class="visible-sm_landscape" style="height: 20px;"></div>
+                                            <div class="visible-sm" style="height: 20px;"></div>
+                                            <div class="visible-xs" style="height: 20px;"></div>
+                        </div>
+                        <div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group"><div class="vc_tta-panels-container"><div class="vc_tta-panels"><div class="vc_tta-panel" id="1529398202157-b0f7e242-880b" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202157-b0f7e242-880b" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Can I integrate your SuperSDK myself?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Yes. After we have applied for the required AppID(s), Key(s) and/or PayCode(s) from the different local App Stores, you will receive an email from us, prompting you to download the appropriate version of our SuperSDK from your dashboard.</p>
+                        <p>For an improved SDK integration experience, we advise partners to review files including the demo, checklist and tutorial guide before proceeding to SDK integration.  For details, please go to our Technical Knowledge Base by clicking <a href="https://www.apptutti.com/partners/support.php">here</a>.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398202251-5837c9e8-c81a" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202251-5837c9e8-c81a" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Can I check your SuperSDK first?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Yes. Registered partners can review the details and download our SuperSDK from the downloads page on the partner resources portal.</p>
+                        <p>Not registered yet?  Go to: <a href="https://www.apptutti.com/partners">www.apptutti.com/partners</a> and learn more!</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398202349-bfa327ba-4ac8" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202349-bfa327ba-4ac8" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How will APPTUTTi support me?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <div id="1525838203778-61fec583-6479" class="vc_tta-panel vc_active" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-body">
+                        <div class="wpb_text_column wpb_content_element ">
+                        <div class="wpb_wrapper">
+                        <p>Our Technical Knowledge Base on the Support page of the Partner Resources Portal provides most of the answers to different technical questions regarding App Submission, SDK Integration, Account Setting, etc.</p>
+                        <p>Upon notification that the App ID(s), Key(s) and/or PayCode(s) are ready, all partners will have access to free integration support services of 20x free support emails.</p>
+                        <p>If you are still unable to integrate the SuperSDK, you can request for our Professional Service.  Click <a href="https://www.apptutti.com/partners/service_superSDK_integration02.php">here</a> for details.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div id="1525838204948-fd67a6b6-5d0d" class="vc_tta-panel" data-vc-content=".vc_tta-panel-body">
+                        <div class="vc_tta-panel-heading">
+                        <h4 class="vc_tta-panel-title"></h4>
+                        </div>
+                        </div>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1568706224654-c181fca8-cf33" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1568706224654-c181fca8-cf33" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Do you require further guidance for integration of our SuperSDK?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p class="p1">Please go to our <a href="https://www.apptutti.com/partners/download.php?id=guide">Technical Guide Page</a> and review our tutorial guides for <a href="https://www.youtube.com/watch?v=MbR_wibsjJ8&amp;list=PLvkfRZ7PiP-VWjrU69LjYkL8e5b4ktE6N&amp;index=8">Unity Engine</a> and <a href="https://www.youtube.com/watch?v=RJfPjlVr4O4&amp;list=PLvkfRZ7PiP-VWjrU69LjYkL8e5b4ktE6N&amp;index=9">Android Engine.</a><span class="Apple-converted-space">   </span></p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398202452-e52232c9-5bea" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202452-e52232c9-5bea" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the average download rate you can guarantee for my app(s)?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>We are unable to guarantee this as it depends on the preferences of mobile users and the popularity of each app.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398202564-ea775cf1-547a" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202564-ea775cf1-547a" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">What is the turn around time?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>Normally, your app will be published on the App Store(s) between 7 to 14 days depending on the final review and test results.</p>
+                        
+                                </div>
+                            </div>
+                        </div></div><div class="vc_tta-panel" id="1529398202910-f70b0ea0-4550" data-vc-content=".vc_tta-panel-body"><div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title"><a href="#1529398202910-f70b0ea0-4550" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">How can I update my App/Game version?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div><div class="vc_tta-panel-body">
+                            <div class="wpb_text_column wpb_content_element " >
+                                <div class="wpb_wrapper">
+                                    <p>After your App/Game is published by us, you can log in to your APPTUTTi account at anytime to upload the latest version of your App/Game. We strongly encourage you to update and improve your App/Game at regular intervals. More information <a href="https://www.apptutti.com/corporate/strategically-plan-update-time-apps/">here</a>:</p>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>		
+</div>
+                            
+</div>
+                        
+</div>
+</div>
+                        </div>
+                        <!-- Others -->
+                        <div class="container vc_container   " >
+                            <div id="Others" class="vc_row wpb_row vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="stm_spacer ">
+                                                <div class="visible-lg visible-md" style="height: 60px;"></div>
+                                                <div class="visible-sm_landscape" style="height: 60px;"></div>
+                                                <div class="visible-sm" style="height: 60px;"></div>
+                                                <div class="visible-xs" style="height: 60px;"></div>
+                                            </div>
+                                            <h4 style="color: #dd0000;text-align: left" class="vc_custom_heading   text-left">Others</h4>
+                                            <div class="stm_spacer ">
+                                                    <div class="visible-lg visible-md" style="height: 20px;"></div>
+                                                    <div class="visible-sm_landscape" style="height: 20px;"></div>
+                                                    <div class="visible-sm" style="height: 20px;"></div>
+                                                    <div class="visible-xs" style="height: 20px;"></div>
+                                            </div>
+                                            <div class="vc_tta-container">
+                            <div class="vc_general vc_tta vc_tta-accordion vc_tta-o-shape-group">
+                                <div class="vc_tta-panels-container">
+                                    <div class="vc_tta-panels">
+                                        <div class="vc_tta-panel">
+                                            <div class="vc_tta-panel-heading">
+                                                <h4 class="vc_tta-panel-title">
+                                                    <a href="#">
+                                                        <span class="vc_tta-title-text">Can I let others access and operate my account?</span>
+                                                        <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div class="vc_tta-panel-body">
+                                                <div class="wpb_text_column wpb_content_element " >
+                                                    <div class="wpb_wrapper">
+                                                        <p>
+                                                            We allow multiple users to access a single account as this increases flexibility and efficiency within your team. After registering, simply log in and invite other members to access your page. They will gain full access to the portal with the exception of sensitive materials such as account and monetization details.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_tta-panel">
+                                            <div class="vc_tta-panel-heading">
+                                                <h4 class="vc_tta-panel-title">
+                                                    <a href="#1529399404590-c039bd3c-977e">
+                                                        <span class="vc_tta-title-text">
+                                                            How do I check my download status?
+                                                        </span>
+                                                        <i class="vc_tta-controls-icon vc_tta-controls-icon-plus">
+                                                        </i>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div class="vc_tta-panel-body">
+                                                <div class="wpb_text_column wpb_content_element " >
+                                                    <div class="wpb_wrapper">
+                                                        <p>
+                                                            All registered partners will have access to their personalized dashboard in the partner resources portal. You can find performance data of your app on the performance stats pages.
+                                                        </p>
+                                                        <p>
+                                                            Partners with published apps will also be able to access the revenue details on the monetization pages. For more details, please check out our video tutorials
+                                                            <a href="#">here</a>.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="vc_tta-panel">
+                                            <div class="vc_tta-panel-heading">
+                                                <h4 class="vc_tta-panel-title">
+                                                    <a href="#">
+                                                        <span class="vc_tta-title-text">
+                                                            Links to take into account for Self-learning purposes
+                                                        </span>
+                                                        <i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div class="vc_tta-panel-body">
+                                                <div class="wpb_text_column wpb_content_element " >
+                                                    <div class="wpb_wrapper">
+                                                        <ul>
+                                                        <li>https://www.chartboost.com/powerup-reports/china-mobile-games-marketing-nov-2016/</li>
+                                                        <li>https://www.gamasutra.com/view/news/296327/Steam_games_in_China_Making_the_most_of_a_lucrative_opportunity.php</li>
+                                                        <li>https://lai.com/https://www.lai.com/blog/?p=891</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>		
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    </div>
     <!-- footerStart -->
     <div class="stm-footer">
         <div class="container footer_widgets_count_3">
@@ -215,7 +1005,7 @@
                     </div>
                     <ul>
                        <li class="page_item page-item-8737">
-                           <a href="">About Us</a>
+                           <a href="../view/site_aboutUs.html">About Us</a>
                         </li>
                        <li class="page_item page-item-12030">
                            <a href="">Ads Monetization</a>
@@ -224,25 +1014,25 @@
                            <a href="">Brand Style Guide</a>
                         </li>
                        <li class="page_item page-item-8738">
-                           <a href="">Contact Us</a>
+                           <a href="../view/site_contact_us.html">Contact Us</a>
                         </li>
                        <li class="page_item page-item-4281 current_page_item">
-                           <a href="">FAQs</a>
+                           <a href="../view/site_FAQs.html">FAQs</a>
                         </li>
                        <li class="page_item page-item-11708">
                            <a href="">H1 2019 User Acquisition Report</a>
                         </li>
                        <li class="page_item page-item-9627">
-                           <a href="">News</a>
+                           <a href="../view/site_news.html">News</a>
                         </li>
                        <li class="page_item page-item-10755">
                            <a href="">Privacy Policy</a>
                         </li>
                        <li class="page_item page-item-12337">
-                           <a href="">Services</a>
+                           <a href="../view/site_service.html">Services</a>
                         </li>
                        <li class="page_item page-item-4113">
-                           <a href="#">Stores</a>
+                           <a href="../view/site_stores.html">Stores</a>
                         </li>
                     </ul>
                 </aside>
@@ -305,8 +1095,10 @@
     <!-- 一键向上 -->
     <div class="pearl_arrow_top arrowShow">
         <div class="arrow">
-
         </div>
     </div>
 </body>
+<!-- <script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type='text/javascript' src='../js/app.js'></script> -->
 </html>

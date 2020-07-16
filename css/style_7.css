@@ -1,0 +1,121 @@
+.btn {
+    padding: 11px 26px !important;
+    text-transform: none;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 1;
+    border-width: 2px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.btn_xs {
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+.btn_sm {
+    font-size: 14px;
+}
+
+.btn_lg {
+    padding: 18px 30px !important;
+    line-height: 18px;
+    font-size: 18px;
+}
+
+.btn_lg .btn__label {
+    font-size: 18px !important;
+}
+
+.btn[disabled] {
+    background-color: #eeeff2 !important;
+    opacity: 1;
+}
+
+.btn[disabled]:not(.btn_white) {
+    color: #808080 !important;
+    border-color: #eeeff2 !important;
+    background-color: #eeeff2 !important;
+}
+
+.btn[disabled]:not(.btn_white):hover {
+    color: #808080 !important;
+    border-color: #eeeff2 !important;
+    background-color: #eeeff2 !important;
+}
+
+.btn.btn_primary:hover {
+    border-color: transparent !important;
+}
+
+.btn__icon {
+    top: -2px;
+    bottom: -2px;
+}
+
+.btn_icon-right .btn__icon {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn_icon-right .btn__icon:before {
+    position: relative;
+}
+
+.btn_icon-left .btn__icon {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.btn_icon-left .btn__icon:before {
+    position: relative;
+}
+
+.btn.btn_primary.btn_outline {
+    padding: 11px 35px;
+}
+
+.btn.btn_primary.btn_outline.btn_sm {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.btn.btn_primary.btn_outline:hover {
+    color: #fff !important;
+}
+
+button[type="submit"]:not(.btn),
+input[type="submit"]:not(.btn) {
+    padding: 10px 36px;
+    text-transform: none;
+    font-size: 16px;
+    border-radius: 99px;
+    font-weight: 400;
+}
+
+.stm-button_fullwidth .btn_outline.btn_outline.btn_fullwidth {
+    border-width: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.stm-button_fullwidth .btn_outline.btn_outline.btn_fullwidth:hover {
+    color: #fff !important;
+}
+
+.stm-button_fullwidth .btn_outline.btn_outline.btn_fullwidth .btn__label {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.stm-button_fullwidth .btn_outline.btn_outline.btn_fullwidth .btn_subtitle_label {
+    opacity: 0.75;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

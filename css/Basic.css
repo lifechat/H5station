@@ -12038,8 +12038,7 @@ textarea,
 .stm_services_style_11 .stm_service__overlay,
 .stm_infobox_style_7 .stm_infobox__image:after,
 .stm-header .stm-navigation .stm_mobile__dropdown:before {
-  transition: all .25s ease !important; }
-
+}
 a.ui-corner-all {
   transition: all 0s ease !important; }
 
@@ -14882,4 +14881,3 @@ body.stm_transparent_header_disabled.stm_title_box_disabled.stm_breadcrumbs_enab
   .stm-header__row_color.pearl_is_sticky.pearl_sticked {
     transform: translateY(0);
     transition: .3s ease; }
-    

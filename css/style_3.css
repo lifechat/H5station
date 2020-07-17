@@ -147,3 +147,45 @@ body:not(.stm_headings_line) .stm_iconbox_style_3 .stm_iconbox__text h5:before {
 .stm_layout_charity .stm_services_style_3 .stm_read_more_link {
     padding-left: 4px !important;
 }
+
+
+@charset "UTF-8";
+
+.wpb_text_column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wpb_text_column ul li {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.wpb_text_column ul li:before {
+    content: '•';
+    font-size: 18px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.wpb_text_column ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: item;
+    margin: 0 0 26px;
+}
+
+.wpb_text_column ol li {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 9px;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.wpb_text_column ol li:before {
+    content: counter(item) ".";
+    counter-increment: item;
+    margin-right: 10px;
+}

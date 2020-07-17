@@ -367,3 +367,205 @@ svg.vc_row_canvas_anim.loaded {
     }
 }
 
+
+.stm_widget_search.style_1 .widget.widget_search {
+    margin-bottom: 35px;
+}
+
+.stm_widget_search.style_1 .widget.widget_search:before {
+    display: none !important;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form {
+    position: relative;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form .form-control {
+    border-radius: 0;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form button {
+    position: absolute;
+    right: 0;
+    top: -9px;
+    width: 44px;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    outline: none !important;
+    padding: 0;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form button i {
+    width: 100%;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form input[name="s"] {
+    padding-right: 50px;
+    background: #eeeff2;
+    color: #222;
+}
+
+.stm_widget_search.style_1 .widget.widget_search .search-form input[name="s"]:focus {
+    background: transparent;
+}
+/*COLORS*/
+/*FONTS*/
+/*FLIP*/
+.stm_pricing-table-flip_style_1.stm_flipbox {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    padding: 0;
+    border: 0;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front,
+  .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    min-height: 350px;
+    height: auto;
+    transition: transform 0.6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front .inner,
+    .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner {
+    position: absolute;
+    padding: 45px 25px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    perspective: inherit;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front .inner h2,
+      .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner h2 {
+    margin-bottom: 10px;
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front .inner h4,
+      .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner h4 {
+    margin-bottom: 16px;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front .inner h5,
+      .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front {
+    background-color: #dddce1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 2px;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner {
+    overflow: hidden;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner .stm_back_bg_icon {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    font-size: 162px;
+    margin-top: -81px;
+    opacity: 0;
+    transition: .1s ease;
+    z-index: -1;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner a {
+    width: auto;
+    margin: 20px auto 0;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox:hover .stm_flipbox__front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox:hover .stm_flipbox__back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.stm_pricing-table-flip_style_1.stm_flipbox:hover .stm_flipbox__back .stm_back_bg_icon {
+    opacity: .2;
+    transition: .3s .38s ease;
+}
+
+@media (max-width: 767px) {
+    .stm_pricing-table-flip_style_1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__front .inner,
+  .stm_pricing-table-flip_style_1.stm_flipbox .stm_flipbox__back .inner {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/*COLORS*/
+/*FONTS*/
+.stm-counter_style_1 .stm-counter__icon {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+    font-size: 40px;
+}
+
+.stm-counter_style_1 .stm-counter__value {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.stm-counter_style_1 .stm-counter__affix {
+    font-size: 25px;
+}
+
+.stm-counter_style_1 .stm-counter__prefix {
+    font-size: 25px;
+}
+
+.stm-counter_style_1 .stm-counter__label {
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.stm-counter_style_1.stm_icon_gradient i {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

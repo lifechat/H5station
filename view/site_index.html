@@ -510,7 +510,7 @@
                                                                 class="stm_slider owl-carousel custom stm_slider_style_10 stm_owl-theme owl-loaded owl-text-select-on">
                                                                 <div class="owl-stage-outer slider-container" style="width: 12152px;">
                                                                     <div class="owl-stage slider has-touch">
-                                                                        <div class="owl-item slider__item baner1" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner1 active" style="width: 1519px;">
                                                                             <div class="stm_slide slide_1 text-left"
                                                                                 data-parallax="slide_1"
                                                                                 style='background-image: url(../image/unity-banner-1920x900.jpg)'>
@@ -1922,6 +1922,7 @@
                 $(this).addClass('active').siblings().removeClass('active')
 
                 num = $(this).index();
+                console.log(num);
                 ul.animate({
                     "right":width*num
                 })

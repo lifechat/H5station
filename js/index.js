@@ -1,5 +1,4 @@
-
-//合作商轮播
+//合作方轮播
 var g_bMoveLeft=true;
 var g_oTimer=null;
 var g_oTimerOut=null;
@@ -8,6 +7,8 @@ var g_iSpeed=3;
 
 window.onload=function ()
 {
+	stm_scroll_to_top();
+	showContent();
 	var oDiv=document.getElementById('roll');
 	var oUl=oDiv.getElementsByTagName('ul')[0];
 	var aLi=oUl.getElementsByTagName('li');
@@ -91,8 +92,18 @@ function doMove()
 	
 	oUl.style.left=l+'px';
 }
-
-
+//滚轮事件
+$(window).scroll(function () {
+	if ($(".pearl_arrow_top").length) {
+		var trigger_height = $(window).scrollTop() + $(window).height() + $('.stm-footer').height();
+		if (trigger_height > $(document).height()) {
+			$(".pearl_arrow_top").addClass("arrowShow");
+		}
+		if ($(window).scrollTop() === 0) {
+			$(".pearl_arrow_top").removeClass("arrowShow");
+		}
+	}
+});
 //一键向上
 function stm_scroll_to_top() {
 	$(".pearl_arrow_top").on("click", function () {
@@ -101,4 +112,14 @@ function stm_scroll_to_top() {
 			$(".arrow_top").removeClass("arrowShow");
 		});
 	});
+}
+//内容展示
+function showContent(){
+	$(".vc_tta-panel").click(function () {
+		$(this).addClass('vc_active');
+		if($(this).hasClass("vc_active")){
+			$info = $(this).siblings();
+			$info.removeClass("vc_active");
+		}
+	})
 }

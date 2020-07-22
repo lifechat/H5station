@@ -189,3 +189,23 @@ body:not(.stm_headings_line) .stm_iconbox_style_3 .stm_iconbox__text h5:before {
     counter-increment: item;
     margin-right: 10px;
 }
+.stm_blockquote_style_3 blockquote {
+    background-color: #eeeff2;
+    font-size: 18px;
+    line-height: 28px;
+    font-style: normal;
+    padding: 26px 30px;
+}
+
+.stm_blockquote_style_3 blockquote p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.stm_blockquote_style_3 blockquote.style_2 {
+    padding: 5px 20px;
+    background: none;
+    font-size: 14px;
+    font-style: italic;
+}

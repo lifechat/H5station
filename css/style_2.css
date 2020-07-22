@@ -105,8 +105,17 @@ body.stm_header_offset .stm_titlebox {
     background-size: cover !important;
     background-repeat: no-repeat;
 }
-
-.stm_titlebox:after {
+.stm_titlebox_style_2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.stm_titlebox::after {
     content: '';
     display: block;
     position: absolute;
@@ -239,7 +248,7 @@ body.stm_header_offset .stm_titlebox {
 
 .stm_titlebox_style_2 {
     background-size: 100%;
-    background-position: 0 0;
+    background-position: 0 0 !important;
     padding: 245px 0 90px;
     margin-bottom: 80px;
 }

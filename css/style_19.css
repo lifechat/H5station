@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 .stm-header .stm-header__row_top {
-    padding-top: 3px;
-    padding-bottom: 5px;
     color: #ffffff;
     font-size: 13px;
 }

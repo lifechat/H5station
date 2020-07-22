@@ -8,7 +8,6 @@ var g_iSpeed=3;
 window.onload=function ()
 {
 	stm_scroll_to_top();
-	showContent();
 	var oDiv=document.getElementById('roll');
 	var oUl=oDiv.getElementsByTagName('ul')[0];
 	var aLi=oUl.getElementsByTagName('li');
@@ -112,14 +111,4 @@ function stm_scroll_to_top() {
 			$(".arrow_top").removeClass("arrowShow");
 		});
 	});
-}
-//内容展示
-function showContent(){
-	$(".vc_tta-panel").click(function () {
-		$(this).addClass('vc_active');
-		if($(this).hasClass("vc_active")){
-			$info = $(this).siblings();
-			$info.removeClass("vc_active");
-		}
-	})
 }

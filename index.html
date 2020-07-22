@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./fonts/iconfont.css" />
     <link rel="stylesheet" href="./css/owl-carousel.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="./css/index.css" > -->
     <style>
         li{list-style: none;}
         img { border: 0; }
@@ -34,6 +35,13 @@
         .roll li:hover { position: relative; top: 2px; }
     </style>
     <style>
+        .slider_item{
+            width:1920px;
+        }
+        .slider-container{
+            width:15360px
+        }
+       
         .tnp-subscription {
         font-size: 13px;
         display: block;
@@ -505,9 +513,9 @@
                                                         <div class="wpb_wrapper">
                                                             <div id="stm_slider_thumbs-5f0e811be097c"
                                                                 class="stm_slider owl-carousel custom stm_slider_style_10 stm_owl-theme owl-loaded owl-text-select-on">
-                                                                <div class="owl-stage-outer slider-container" style="width: 12152px;">
+                                                                <div class="owl-stage-outer slider-container">
                                                                     <div class="owl-stage slider has-touch">
-                                                                        <div class="owl-item slider__item baner1 active" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner1 active">
                                                                             <div class="stm_slide slide_1 text-left"
                                                                                 data-parallax="slide_1"
                                                                                 style='background-image: url(./images/unity-banner-1920x900.jpg)'>
@@ -529,7 +537,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_2 text-left"
                                                                                 style='background-image: url(./images/website-banner-14.jpg)'>
                                                                                 <div class="container">
@@ -562,7 +570,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_3 text-left"
                                                                                 style='background-image: url(./images/website-banner-11-1.jpg)'>
                                                                                 <div class="container">
@@ -592,7 +600,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_4 text-left"
                                                                                 style='background-image: url(./images/website-banner-09-2.jpg)'>
                                                                                 <div class="container">
@@ -624,7 +632,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_5 text-left"
                                                                                 style='background-image: url(./images/website-banner-10-1.jpg)'>
                                                                                 <div class="container">
@@ -652,7 +660,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_6 text-left"
                                                                                 data-parallax="slide_6"
                                                                                 style='background-image: url(./images/website-banner-06.jpg)'>
@@ -682,7 +690,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_7 text-left"
                                                                                 data-parallax="slide_7"
                                                                                 style='background-image: url(./images/ads-monetization-2-15-1920x900.png)'>
@@ -704,7 +712,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="owl-item slider__item baner2" style="width: 1519px;">
+                                                                        <div class="owl-item slider__item baner2">
                                                                             <div class="stm_slide slide_8 text-left"
                                                                                 data-parallax="slide_8"
                                                                                 style='background-image: url(./images/artboard-1-copy-14.png)'>
@@ -1909,9 +1917,10 @@
     <script type="text/javascript" src="./js/index.js"></script>
     <script type='text/javascript' src='./js/count.js'></script>
     <script>
+         $(".owl-item").css("width",window.screen.width)
         $(document).ready(function () {
             ul = $('.owl-stage');
-            var width = 1519;
+            var width = window.screen.width;
             var num = 0;
             start()
             // 鼠标点击下方选项卡触发事件
@@ -1919,7 +1928,6 @@
                 $(this).addClass('active').siblings().removeClass('active')
 
                 num = $(this).index();
-                console.log(num);
                 ul.animate({
                     "right":width*num
                 })
@@ -1947,7 +1955,7 @@
                     if (num >= 7) {
                         num = 0;
                         ul.css({
-                            right: 0
+                            right: width*num
                         });
                     }
                     ul.animate({
